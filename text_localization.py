@@ -3,15 +3,6 @@ from pytesseract import Output
 import pytesseract 
 import cv2
 import argparse
-import pandas as pd
-import nltk
-import nltk.corpus
-from nltk.tokenize import word_tokenize
-pf = pd.read_csv("Product.csv", delimiter = "|")
-type(pf)
-names = pf["RATE DIFF 18%"]
-type(names)
-c = 0
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", type=str,
