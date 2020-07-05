@@ -3,9 +3,9 @@ import nltk
 import nltk.corpus
 from nltk.tokenize import word_tokenize
 def database(text):
-    pf = pd.read_csv("Product.csv", delimiter = "|")
+    pf = pd.read_csv("Product_1.csv", delimiter = "|")
     type(pf)
-    names = pf["Product Name"]
+    names = pf["RATE DIFF 18%"]
     type(names)
     c = 0
     for i in names:
