@@ -31,10 +31,10 @@ for i in range(0, len(results["text"])):
     if conf > args["min_confidence"]:
 
         print("Confidence: {}".format(conf))
-        print("Text: {}".format(text))
+        print("Text: {}".format(text.upper()))
         print("")
         import database_man
-        database_man.database(text)
+        database_man.database(text.upper())
         text = "".join([c if ord(c) < 128 else "" for c in text]).strip()
         cv2.rectangle(image, (x, y), (x + w, y + h), (0,255,0), 2)
 
