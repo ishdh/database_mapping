@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 def database(text):
     pf = pd.read_csv("Product.csv", delimiter = "|")
     type(pf)
-    names = pf["Product name"]
+    names = pf["Product Name"]
     type(names)
     c = 0
     for i in names:
